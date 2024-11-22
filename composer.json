@@ -1,0 +1,37 @@
+{
+  "name": "techork/payment-es-stripe",
+  "type": "library",
+  "license": "MIT",
+  "require": {
+    "php": "^8.2",
+    "techork/payment-es": "^1.0",
+    "stripe/stripe-php": "^16.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "PaymentSystem\\Stripe\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "PaymentSystem\\Stripe\\Tests\\": "tests/"
+    }
+  },
+  "require-dev": {
+    "pestphp/pest": "^3.7",
+    "pestphp/pest-plugin-faker": "^3.0"
+  },
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "git@github.com:Sanchous98/payment-es.git"
+    }
+  ]
+}
